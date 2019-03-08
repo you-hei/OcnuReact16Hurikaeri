@@ -1,4 +1,4 @@
-import React, { Component, memo, useCallback} from 'react'
+import React, { Component, memo, useCallback, useRef } from 'react'
 
 class Oya extends Component {
     constructor(props) {
@@ -33,12 +33,25 @@ const PerfoDekiru = ({ clickCount }) => {
         <div>
             {array1000.map((el, i) => (
                 <MemoizedPrintButton
-                    onClick={() => { console.log('print') }}
-                    // onClick={memoizedOnClickAre}
+                    // onClick={() => { console.log('print') }}
+                    onClick={memoizedOnClickAre}
                     key={i}
                 />
             ))}
             {clickCount}
+        </div>
+    )
+}
+
+const UseRefNoYatsu = () => {
+    const ocnuRef = useRef(null)
+    const onClickButton = () => {
+        console.log('click', ocnuRef.current)
+    }
+    return (
+        <div>
+            <div ref={ocnuRef}>ocnu</div>
+            <button onClick={onClickButton}>ref no button</button>
         </div>
     )
 }
@@ -48,6 +61,8 @@ const React168NoYatsu = () => (
         <h1>React16.8</h1>
         <h2>useCallback</h2>
         <Oya />
+        <h2>useRef</h2>
+        <UseRefNoYatsu />
     </div>
 )
 
