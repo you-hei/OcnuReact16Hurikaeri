@@ -29,11 +29,11 @@ class PortalsDekinai extends Component {
     }
 }
 
-class ErrorBoundariesDekinai extends Component {
-    render() {
-        return <div/>
-    }
-}
+// class ErrorBoundariesDekinai extends Component {
+//     render() {
+//         return <div/>
+//     }
+// }
 
 const React15NoYatsu = () => (
     <div>

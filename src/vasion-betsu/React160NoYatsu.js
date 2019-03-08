@@ -29,15 +29,15 @@ class PortalsDekiru extends Component {
     }
 }
 
-class ErrorBoundariesDekiru extends Component {
-    render() {
-        return <div/>
-    }
-}
+// class ErrorBoundariesDekiru extends Component {
+//     render() {
+//         return <div/>
+//     }
+// }
 
 const React16NoYatsu = () => (
     <div>
-        <h1>React15</h1>
+        <h1>React16</h1>
         <h2>Fragments</h2>
         <FragmentsDekiru />
         <h2>Portals</h2>
