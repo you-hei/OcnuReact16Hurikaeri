@@ -7,6 +7,7 @@ import React163NoYatsu from "./vasion-betsu/React163NoYatsu";
 import React164NoYatsu from "./vasion-betsu/React164NoYatsu";
 import React165NoYatsu from "./vasion-betsu/React165NoYatsu";
 import React166NoYatsu from "./vasion-betsu/React166NoYatsu";
+import React168NoYatsu from "./vasion-betsu/React168NoYatsu";
 
 class App extends Component {
   render() {
@@ -16,9 +17,10 @@ class App extends Component {
         {/*<React16NoYatsu />*/}
         {/*<React162NoYatsu />*/}
         {/*<React163NoYatsu />*/}
-        <React164NoYatsu/>
+        {/*<React164NoYatsu/>*/}
         {/*<React165NoYatsu />*/}
         {/*<React166NoYatsu />*/}
+        <React168NoYatsu />
       </div>
     );
   }
