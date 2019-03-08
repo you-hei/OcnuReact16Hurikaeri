@@ -22,7 +22,7 @@ const React162NoYatsu = () => (
         <h1>React16.2</h1>
         <h2>Fragments</h2>
         <FragmentsDekiru />
-        {/*<FragmentsDekiru2 />*/}
+        <FragmentsDekiru2 />
     </div>
 )
 
