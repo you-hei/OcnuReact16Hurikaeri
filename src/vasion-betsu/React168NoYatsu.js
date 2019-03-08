@@ -33,8 +33,8 @@ const PerfoDekiru = ({ clickCount }) => {
         <div>
             {array1000.map((el, i) => (
                 <MemoizedPrintButton
-                    // onClick={() => { console.log('print') }}
-                    onClick={memoizedOnClickAre}
+                    onClick={() => { console.log('print') }}
+                    // onClick={memoizedOnClickAre}
                     key={i}
                 />
             ))}
